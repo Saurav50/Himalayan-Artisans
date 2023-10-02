@@ -17,7 +17,7 @@ const Checkout = (props) => {
     return value.trim() === "";
   };
   const isFiveChars = (value) => {
-    return value.trim().length === 5;
+    return value.trim().length === 6;
   };
   const onSubmitHandler = (event) => {
     event.preventDefault();
@@ -59,6 +59,7 @@ const Checkout = (props) => {
           formInputsIsValid.name ? "" : styles.invalid
         }`}
       >
+        <h3>Billing Details</h3>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" ref={nameRef} />
         {!formInputsIsValid.name && (
@@ -95,7 +96,7 @@ const Checkout = (props) => {
         <label htmlFor="postal">Postal Code</label>
         <input type="text" id="postal" ref={codeRef} />
         {!formInputsIsValid.code && (
-          <p className={styles["error-text"]}>Postal Code must be of 5</p>
+          <p className={styles["error-text"]}>Postal Code must be of 6</p>
         )}
       </div>
       {/* TODO: Add a submit button */}

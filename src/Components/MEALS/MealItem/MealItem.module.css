@@ -6,13 +6,17 @@
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
+  max-width: 20rem;
 }
 
 .meal h3 {
   margin: 0 0 0.25rem 0;
   max-width: 20rem;
 }
-
+.meal img {
+  height: 200px;
+  width: 100%;
+}
 .description {
   font-style: italic;
   max-width: 20rem;

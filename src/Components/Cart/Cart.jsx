@@ -58,7 +58,7 @@ const Cart = (props) => {
     setDataIsSubmitting(true);
     const postData = async () => {
       const response = await fetch(
-        "https://meals-kart-default-rtdb.firebaseio.com/orders.json",
+        "https://himalayan-artisans-default-rtdb.firebaseio.com/Orders.json",
         {
           method: "POST",
           body: JSON.stringify({ user: userData, products: ctx.items }),

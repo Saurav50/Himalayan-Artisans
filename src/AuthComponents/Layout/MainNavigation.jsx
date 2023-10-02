@@ -33,7 +33,6 @@ const MainNavigation = (props) => {
                 <button onClick={logoutHandler}>Logout</button>
               </li>
             )}
-
             <li>
               <HeaderButton onShowCart={props.onShowCart} />
             </li>

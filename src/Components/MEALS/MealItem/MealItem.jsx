@@ -21,6 +21,7 @@ const MealItem = (props) => {
       <li className={styles.meal}>
         <div>
           <h3>{props.name}</h3>
+          <img src={props.image} alt="" />
           <div className={styles.description}>{props.description}</div>
           <div className={styles.price}>{`$${props.price.toFixed(2)}`}</div>
         </div>
